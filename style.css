@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 1;
+	box-sizing: border-box;
+
+}
+html{
+	font-size: 10px;
+
+}
+body{
+	overflow: hidden;
+	font-family: sans-serif;
+	background: #ecd0c8;
+	color: #6f3d2e;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	font-size: 1.2rem;
+	position: relative;
+}
+.music{
+	width: 300px;
+	height:420px;
+	box-shadow: -9px -9px 9px 0px
+	#f9f0ee66, 9px 9px 9px 0px #d28f7cb3;
+
+}
+.music-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+	padding: 1rem;
+
+}
+.icon{
+	outline: none;
+	box-shadow: 0 0 4px 3px rgb(210, 143, 124, 0.7);
+	background-color: #ecd0c8;
+	background-position: center;
+	border: none;
+	color: #925945;
+	cursor: pointer;
+	letter-spacing: 0.08rem;
+	position: relative;
+	text-transform: uppercase;
+	transition: all 0.5s;
+	z-index: 0;
+	font-size: 1.2rem;
+	width: 30px;
+	height: 25px;
+	border-radius: 8px;
+}
+.music-body{
+	padding: 1rem;
+
+}
+.music-img{
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 240px;
+	height: 120px;
+	margin: 0 auto 2rem auto;
+}
+.music-img img{
+	width: 90%;
+	height: 90%;
+	box-shadow: 0 0 6px 5px rgb(77, 47, 36, 36, 0.7);
+}
+.music-content{
+	text-align: center;
+}
+.music-bar{
+	padding: 3rem 0;
+}
+.music-bar .progress{
+	background-color: rgb(146, 89, 69,0.3);
+	border-radius: 25px;
+	height: 3.5px;
+	width: 90%;
+	margin: 0 auto 0.5rem auto;
+	position: relative;
+}
+.music-bar .progress-played{
+	background-color: #6f3d2e;
+	border-radius: 25px;
+	position: absolute;
+	height: 100%;
+	width: 15%;
+	z-index: 1;
+
+}
+.music-bar .progress-played::after{
+	content: "";
+	border-radius: 100%;
+	width: 6.5px;
+	height: 6.5px;
+	background: #6f3d2e;
+	position: absolute;
+	right: 0;
+	top: -1.3px;
+	z-index: 2;
+}
+.music-bar .progress-min{
+	 color: #925945;
+	 display: flex;
+	 justify-content: space-between;
+	 font-size: 1.1rem;
+	 margin: 0 auto;
+	 width: 90%;
+} 
+.music-footer{
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	padding: 0.5rem;
+
+}
+.label{
+	background-color: #ecd0c8;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4px;
+}
+.icon-large{
+	font-size: 1.8rem;
+	width: 45px;
+	height: 45px;
+}
+.icon-ctrl{
+	background: linear-gradient(315deg,#83503e,#9c5f4a);
+	box-shadow: 0 0 4px 4px #c18e7c;
+	position: relative;
+}
+.icon-ctrl::after{
+	content: "";
+	background: #ecd0c8;
+	z-index: -1;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: calc(100% - 8px);
+	height: calc(100% - 8px);;
+}
